@@ -16,8 +16,8 @@ spring:
       fail-fast: false
       # 是否启用配置中心
       enabled: ${SPRING_CLOUD_CONFIG_ENABLED:false}
-      # 配置中心地址
-      uri: ${SPRING_CLOUD_CONFIG_URI:http://dev.hzero.org:8010}
+      # 配置中心地址 host.docker.internal:choerodon-platform:8100
+      uri: ${SPRING_CLOUD_CONFIG_URI:http://127.0.0.1:8010}
       retry:
         # 最大重试次数
         maxAttempts: 6
@@ -39,7 +39,7 @@ eureka:
   client:
     serviceUrl:
       # 注册中心地址
-      defaultZone: ${EUREKA_DEFAULT_ZONE:http://dev.hzero.org:8000/eureka}
+      defaultZone: ${EUREKA_DEFAULT_ZONE:http://127.0.0.1:8000/eureka}
     registryFetchIntervalSeconds: 3
     disable-delta: true
 

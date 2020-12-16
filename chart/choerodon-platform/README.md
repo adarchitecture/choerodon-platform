@@ -61,7 +61,7 @@ Parameter | Description	| Default
 `service.name` | service名称 | `choerodon-platform`
 `resources.limits` | k8s中容器能使用资源的资源最大值 | `3Gi`
 `resources.requests` | k8s中容器使用的最小资源需求 | `2Gi`
-
+dev.hzero.org
 ### SkyWalking Configuration
 Parameter | Description
 --- |  --- 
